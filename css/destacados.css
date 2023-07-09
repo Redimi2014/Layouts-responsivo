@@ -1,0 +1,53 @@
+.destacados {
+    background-color: var(--background-azul-claro);
+    padding-top: 2.5rem;
+    /*Tamaño de los margenes (padding)*/
+    padding-bottom: 2rem;
+
+}
+
+.destacados_titulo {
+    color: var(fuente-ceniza-oscuro);
+    font-weight: 700;
+    /*el ancho de la fuente*/
+    font-size: 1.5rem;
+    /*Tamaño de la fuente*/
+    font-family: var(--montserrat);
+    /*llamada de la variable para el tipo de fuente*/
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.destacados_panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.destacados_panel-imagen {
+    width: 100vw;
+    /*la imagen se mostrara al 100%*/
+    max-width: 600px;
+    /*Limitar el tamaño de la pantalla ya que debe de quedar en modo dispositivo movil*/
+    box-shadow: 0.2px 10px 5px #00000020;
+    /*Se utilizara un sombreado*/
+    margin-bottom: .5rem;
+    /*Margen del boton*/
+}
+
+.destacados_panel-texto {
+font-weight: 700;
+font-size: 1.2rem;
+line-height: normal;
+
+}
+
+.destacados_boton{
+color: var(--boton-rojo);
+border-color: var(boton-rojo);
+margin: 0 auto  ;
+
+}

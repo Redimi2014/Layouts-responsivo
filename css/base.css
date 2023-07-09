@@ -1,0 +1,62 @@
+/*crear variables de colores*/
+:root{ /*Esta etiqueta "ROOT" Permite que cuando creemos variables
+  no se pierda la informacion de ellas */
+/*declarar una variable se escribe asi --variable: "Valor"*/
+/*para llamar una variable se coloca de la siguiente manera var(Nombre de la variable) ejemplo var(--boton-rojo)*/
+--background-llamada-mobile: #00161C;
+--background-blanco: #FFFFFF;
+--background-azul-claro: #DFE3F5;
+--background-ceniza-claro: #F7F4F4;
+--background-ceniza-medio: #D9D9D9;
+--border-cabecera-mobile: #103D4A;
+--boton-rojo: #B72E2E;
+--fuente-ceniza-claro: #666666;
+--fuente-ceniza-oscuro: #4F4C4C;
+--planes-card-start: #035A76;
+--planes-card-ultra: #690F8E;
+--planes-card-mega: #B00024;
+--fuente-enlace: #0006FF;
+--background-footer: #333333;
+--montserrat: 'Montserrat', sans-serif; /*declaramos la variable monserrar con el tipo monserrat o si no sans-serif*/
+--open-sans: 'Open Sans', sans-serif;
+
+
+}
+
+
+/*/////////////////////////////////*/
+
+
+
+
+body{ /*Esta linea de codigo es para indicar que en el cuarpo llevare cierto tipo de fuente*/
+ font-family: var(--open-sans) /*Esta linea de codigo indica que se 
+ utilizara el open sans si la PC que ejecutara la pagina no lo
+  tiene entonces utilizara el sans-serif*/
+}
+
+.container {
+
+  padding-right: 6%; /* define el espacio transparente entre el contenido y el borde. Es el margen interior de la caja */
+  padding-left: 6%;
+}
+
+
+.boton {  /*la clase boton para darle formato*/
+text-align: center; /*Centralizar el texto*/
+display: block;
+width: 100%;
+max-width: 350px; /*Para limitar el tamaño*/
+box-sizing: border-box; /*Para limitar el tamaño del max*/
+padding: 1rem 2rem; /*un ren abajo y uno arriba, y dos a la izquierda y derecha*/
+border: 1px solid var(--boton-rojo); /*Color del borde del boton*/ /*se llamo la variable --boton-rojo*/
+border-radius: 5px; /*Darle tamaño al radio del borde del boton*/
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+      padding-left: calc((100% - 940px)/2);
+      padding-right: calc((100% - 940px)/2);
+  }
+}
